@@ -147,6 +147,12 @@
     @apply transition-all duration-300 hover:border-white;
     animation: bounce-subtle 2s ease-in-out infinite;
   }
+
+  /* Basic page - Noto Sans Hebrew font override */
+  .basic-page,
+  .basic-page * {
+    font-family: 'Noto Sans Hebrew', sans-serif !important;
+  }
 }
 
 @layer utilities {
