@@ -54,8 +54,8 @@ export default {
         },
       },
       fontFamily: {
-        display: ["athena", "Georgia", "Times New Roman", "serif"],
-        sans: ["athena", "Georgia", "Times New Roman", "serif"],
+        display: ["Noto Sans Hebrew", "sans-serif"],
+        sans: ["Noto Sans Hebrew", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
