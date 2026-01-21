@@ -1,0 +1,125 @@
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import sinayaPortrait from "@/assets/sinaya-portrait.webp";
+import miniPic1 from "@/assets/mini-pic-1.webp";
+import miniPic2 from "@/assets/mini-pic-2.webp";
+import miniPic3 from "@/assets/mini-pic-3.webp";
+
+gsap.registerPlugin(ScrollTrigger);
+
+const BasicAbout = () => {
+  const sectionRef = useRef<HTMLElement>(null);
+  const textRef = useRef<HTMLDivElement>(null);
+  const imageRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.fromTo(
+        textRef.current,
+        { x: -60, opacity: 0 },
+        {
+          x: 0,
+          opacity: 1,
+          duration: 1,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: "top 60%",
+          },
+        }
+      );
+
+      gsap.fromTo(
+        imageRef.current,
+        { x: 60, opacity: 0 },
+        {
+          x: 0,
+          opacity: 1,
+          duration: 1,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: "top 60%",
+          },
+        }
+      );
+    }, sectionRef);
+
+    return () => ctx.revert();
+  }, []);
+
+  return (
+    <section id="about" ref={sectionRef} className="py-32 bg-white">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+        {/* Section Header */}
+        <div className="mb-20">
+          <p className="text-sm font-light text-[#999] tracking-widest mb-4">ABOUT</p>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-[#1a1a1a] leading-tight max-w-3xl">
+            Crafted with care to preserve light, space, and natural harmony.
+          </h2>
+        </div>
+
+        {/* Content Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
+          {/* Left - Text Content */}
+          <div ref={textRef} className="space-y-12">
+            <p className="text-lg text-[#666] font-light leading-relaxed">
+              Our studio is dedicated to creating exceptionally refined, high-quality interiors, paired with exceptional, personal service. From the moment you reach out, every detail is thoughtfully considered: from selecting the finest materials to crafting a space tailored perfectly to your lifestyle, taste, and personality.
+            </p>
+
+            {/* Stats */}
+            <div className="grid grid-cols-3 gap-8 pt-8 border-t border-gray-200">
+              <div>
+                <p className="text-4xl md:text-5xl font-light text-[#1a1a1a]">15+</p>
+                <p className="text-sm text-[#999] mt-2 tracking-wider">Years Experience</p>
+              </div>
+              <div>
+                <p className="text-4xl md:text-5xl font-light text-[#1a1a1a]">200+</p>
+                <p className="text-sm text-[#999] mt-2 tracking-wider">Projects Done</p>
+              </div>
+              <div>
+                <p className="text-4xl md:text-5xl font-light text-[#1a1a1a]">50+</p>
+                <p className="text-sm text-[#999] mt-2 tracking-wider">Happy Clients</p>
+              </div>
+            </div>
+
+            {/* Mini Images */}
+            <div className="flex gap-4 pt-8">
+              <div className="w-24 h-16 overflow-hidden">
+                <img src={miniPic1} alt="" className="w-full h-full object-cover" />
+              </div>
+              <div className="w-24 h-16 overflow-hidden">
+                <img src={miniPic2} alt="" className="w-full h-full object-cover" />
+              </div>
+              <div className="w-24 h-16 overflow-hidden">
+                <img src={miniPic3} alt="" className="w-full h-full object-cover" />
+              </div>
+            </div>
+          </div>
+
+          {/* Right - Portrait */}
+          <div ref={imageRef} className="relative">
+            <div className="aspect-[3/4] overflow-hidden">
+              <img
+                src={sinayaPortrait}
+                alt="Maya - Founder"
+                className="w-full h-full object-cover object-top"
+              />
+            </div>
+
+            {/* Info Card */}
+            <div className="absolute -bottom-8 -left-8 lg:-left-12 bg-[#1a1a1a] text-white p-8 max-w-xs">
+              <h3 className="text-2xl font-light mb-4">Maya</h3>
+              <p className="text-sm text-white/70 font-light leading-relaxed">
+                With over fifteen years of experience transforming homes into havens, Maya brings an unmatched eye for detail and a deep understanding of how spaces shape our lives.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default BasicAbout;
