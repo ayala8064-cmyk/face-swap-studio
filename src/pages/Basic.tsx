@@ -9,7 +9,7 @@ import BasicNav from "@/components/basic/BasicNav";
 
 const Basic = () => {
   return (
-    <main className="min-h-screen bg-[#FAFAFA]">
+    <main dir="rtl" className="min-h-screen bg-[#FAFAFA] font-sans">
       <BasicNav />
       <BasicHero />
       <BasicFeatures />

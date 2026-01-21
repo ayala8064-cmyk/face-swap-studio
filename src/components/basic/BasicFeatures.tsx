@@ -11,25 +11,25 @@ const features = [
   {
     id: "natural",
     number: "01",
-    title: "Natural",
-    subtitle: "Exceptionally natural-looking spaces",
-    description: "Whether modern or classic, every room is crafted to blend seamlessly with your lifestyle. Each detail is customized to suit your taste, personality, and daily rhythm—so it never looks staged, only natural.",
+    title: "טבעיות",
+    subtitle: "חללים שנראים טבעיים באופן יוצא דופן",
+    description: "בין אם מודרני או קלאסי, כל חדר מעוצב להשתלב בצורה חלקה עם אורח החיים שלכם. כל פרט מותאם אישית לטעם, לאישיות ולקצב היומיומי שלכם - כך שזה אף פעם לא נראה מבוים, רק טבעי.",
     image: naturalImage,
   },
   {
     id: "movement",
     number: "02",
-    title: "Movement",
-    subtitle: "Natural flow that moves like life itself",
-    description: "Open or intimate, grand or cozy, every space is designed with balance and flow in mind. The result is a home that responds naturally to light, seasons, and daily living.",
+    title: "תנועה",
+    subtitle: "זרימה טבעית שנעה כמו החיים עצמם",
+    description: "פתוח או אינטימי, מרשים או נעים, כל חלל מעוצב עם איזון וזרימה בראש. התוצאה היא בית שמגיב באופן טבעי לאור, לעונות ולחיי היום-יום.",
     image: movementImage,
   },
   {
     id: "quality",
     number: "03",
-    title: "Quality",
-    subtitle: "Exceptional materials, timeless and enduring",
-    description: "We source only the finest materials, selected for their beauty, durability, and character. Known for aging beautifully over time, each element is chosen to be lived with and loved for years.",
+    title: "איכות",
+    subtitle: "חומרים יוצאי דופן, נצחיים ועמידים",
+    description: "אנו משיגים רק את החומרים המשובחים ביותר, שנבחרו בזכות יופים, עמידותם ואופיים. ידועים כמתיישנים יפה לאורך זמן, כל אלמנט נבחר כדי לחיות איתו ולאהוב אותו לאורך שנים.",
     image: qualityImage,
   },
 ];
@@ -69,11 +69,11 @@ const BasicFeatures = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         {/* Section Header */}
         <div className="mb-24">
-          <p className="text-sm font-light text-[#999] tracking-widest mb-4">WHAT WE DO</p>
+          <p className="text-sm font-light text-[#999] tracking-widest mb-4">מה אנחנו עושים</p>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-[#1a1a1a] leading-tight">
-            Creating spaces that
+            יוצרים חללים שמרגישים
             <br />
-            feel like home
+            כמו בית
           </h2>
         </div>
 
@@ -96,7 +96,7 @@ const BasicFeatures = () => {
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                   />
                   {/* Number Badge */}
-                  <div className="absolute top-6 left-6 w-16 h-16 bg-white flex items-center justify-center">
+                  <div className="absolute top-6 right-6 w-16 h-16 bg-white flex items-center justify-center">
                     <span className="text-2xl font-light text-[#1a1a1a]">{feature.number}</span>
                   </div>
                 </div>
