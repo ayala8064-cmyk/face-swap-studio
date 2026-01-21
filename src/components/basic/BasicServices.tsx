@@ -14,43 +14,43 @@ const services = [
   {
     id: "residential",
     number: "01",
-    title: "Residential Design",
-    description: "Transform your home into a sanctuary. Each residential project is thoughtfully designed to reflect your lifestyle.",
+    title: "עיצוב מגורים",
+    description: "הפכו את הבית שלכם למקלט. כל פרויקט מגורים מעוצב בקפידה כדי לשקף את אורח החיים שלכם.",
     image: sinaya1,
   },
   {
     id: "renovation",
     number: "02",
-    title: "Full Renovations",
-    description: "Breathe new life into existing spaces. From structural changes to finishing touches.",
+    title: "שיפוצים מלאים",
+    description: "נשפו חיים חדשים לחללים קיימים. משינויים מבניים ועד גימורים סופיים.",
     image: sinaya2,
   },
   {
     id: "styling",
     number: "03",
-    title: "Interior Styling",
-    description: "Perfect your space with curated furniture, art, and accessories.",
+    title: "עיצוב פנים",
+    description: "שכללו את החלל שלכם עם ריהוט, אמנות ואקססוריז שנאספו בקפידה.",
     image: sinaya3,
   },
   {
     id: "custom",
     number: "04",
-    title: "Custom Furniture",
-    description: "Commission bespoke pieces that fit perfectly. From built-in cabinetry to statement furniture.",
+    title: "ריהוט בהזמנה",
+    description: "הזמינו פריטים ייחודיים שמתאימים בצורה מושלמת. מארונות מובנים ועד ריהוט ייחודי.",
     image: sinaya4,
   },
   {
     id: "lighting",
     number: "05",
-    title: "Lighting Design",
-    description: "Set the perfect mood with expertly planned lighting. From ambient to accent.",
+    title: "עיצוב תאורה",
+    description: "צרו את האווירה המושלמת עם תאורה מתוכננת במקצועיות. מתאורת אווירה ועד תאורת הדגשה.",
     image: sinaya5,
   },
   {
     id: "consultations",
     number: "06",
-    title: "Consultations",
-    description: "A moment to explore, discover, and decide. Expert guidance at every step.",
+    title: "ייעוץ",
+    description: "רגע לחקור, לגלות ולהחליט. הדרכה מקצועית בכל שלב.",
     image: sinaya6,
   },
 ];
@@ -90,11 +90,11 @@ const BasicServices = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         {/* Header */}
         <div className="mb-20 text-center">
-          <p className="text-sm font-light text-[#666] tracking-widest mb-4">SERVICES</p>
+          <p className="text-sm font-light text-[#666] tracking-widest mb-4">שירותים</p>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-white">
-            One studio,
+            סטודיו אחד,
             <br />
-            many services
+            שירותים רבים
           </h2>
         </div>
 
@@ -116,7 +116,7 @@ const BasicServices = () => {
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors duration-500" />
                 
                 {/* Number */}
-                <div className="absolute top-4 left-4 text-white/50 text-sm font-light">
+                <div className="absolute top-4 right-4 text-white/50 text-sm font-light">
                   {service.number}
                 </div>
               </div>

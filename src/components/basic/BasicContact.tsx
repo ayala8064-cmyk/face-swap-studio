@@ -45,19 +45,19 @@ const BasicContact = () => {
       {/* Content */}
       <div ref={contentRef} className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 py-32">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
-          {/* Left - Info */}
+          {/* Right - Info (in RTL) */}
           <div className="flex flex-col justify-center">
-            <p className="text-sm font-light text-[#666] tracking-widest mb-4">GET IN TOUCH</p>
+            <p className="text-sm font-light text-[#666] tracking-widest mb-4">צרו קשר</p>
             <h2 className="text-5xl md:text-6xl lg:text-7xl font-light text-white mb-8">
-              Let's create
+              בואו ניצור
               <br />
-              something
+              משהו
               <br />
-              beautiful
+              יפהפה
             </h2>
 
             <p className="text-lg text-white/60 font-light leading-relaxed max-w-md mb-12">
-              Ready to transform your space? We'd love to hear from you. Reach out to start your design journey.
+              מוכנים להפוך את החלל שלכם? נשמח לשמוע מכם. פנו אלינו להתחיל את מסע העיצוב שלכם.
             </p>
 
             {/* Contact Info */}
@@ -70,7 +70,7 @@ const BasicContact = () => {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-white font-light">Design Studio, Tel Aviv</p>
+                  <p className="text-white font-light">סטודיו לעיצוב, תל אביב</p>
                 </div>
               </div>
 
@@ -81,7 +81,7 @@ const BasicContact = () => {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-white font-light">054.123.4567</p>
+                  <p className="text-white font-light">054-123-4567</p>
                 </div>
               </div>
 
@@ -92,48 +92,48 @@ const BasicContact = () => {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-white font-light">hello@mayainteriors.com</p>
+                  <p className="text-white font-light">hello@mayainteriors.co.il</p>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Right - Form */}
+          {/* Left - Form (in RTL) */}
           <div className="flex items-center">
             <div className="w-full bg-white p-8 lg:p-12">
-              <h3 className="text-2xl font-light text-[#1a1a1a] mb-8">Book a Consultation</h3>
+              <h3 className="text-2xl font-light text-[#1a1a1a] mb-8">הזמינו ייעוץ</h3>
 
               <form className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-sm text-[#666] mb-2">First Name</label>
+                    <label className="block text-sm text-[#666] mb-2">שם פרטי</label>
                     <input
                       type="text"
-                      className="w-full border-b border-gray-300 py-3 text-[#1a1a1a] font-light focus:outline-none focus:border-[#1a1a1a] transition-colors"
+                      className="w-full border-b border-gray-300 py-3 text-[#1a1a1a] font-light focus:outline-none focus:border-[#1a1a1a] transition-colors bg-transparent"
                     />
                   </div>
                   <div>
-                    <label className="block text-sm text-[#666] mb-2">Last Name</label>
+                    <label className="block text-sm text-[#666] mb-2">שם משפחה</label>
                     <input
                       type="text"
-                      className="w-full border-b border-gray-300 py-3 text-[#1a1a1a] font-light focus:outline-none focus:border-[#1a1a1a] transition-colors"
+                      className="w-full border-b border-gray-300 py-3 text-[#1a1a1a] font-light focus:outline-none focus:border-[#1a1a1a] transition-colors bg-transparent"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-sm text-[#666] mb-2">Email</label>
+                  <label className="block text-sm text-[#666] mb-2">אימייל</label>
                   <input
                     type="email"
-                    className="w-full border-b border-gray-300 py-3 text-[#1a1a1a] font-light focus:outline-none focus:border-[#1a1a1a] transition-colors"
+                    className="w-full border-b border-gray-300 py-3 text-[#1a1a1a] font-light focus:outline-none focus:border-[#1a1a1a] transition-colors bg-transparent"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm text-[#666] mb-2">Message</label>
+                  <label className="block text-sm text-[#666] mb-2">הודעה</label>
                   <textarea
                     rows={4}
-                    className="w-full border-b border-gray-300 py-3 text-[#1a1a1a] font-light focus:outline-none focus:border-[#1a1a1a] transition-colors resize-none"
+                    className="w-full border-b border-gray-300 py-3 text-[#1a1a1a] font-light focus:outline-none focus:border-[#1a1a1a] transition-colors resize-none bg-transparent"
                   />
                 </div>
 
@@ -141,7 +141,7 @@ const BasicContact = () => {
                   type="submit"
                   className="w-full py-4 bg-[#1a1a1a] text-white text-sm font-light tracking-wider hover:bg-[#333] transition-colors"
                 >
-                  Send Message
+                  שלחו הודעה
                 </button>
               </form>
             </div>
@@ -151,17 +151,17 @@ const BasicContact = () => {
         {/* Footer */}
         <div className="mt-32 pt-8 border-t border-white/10 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
           <p className="text-sm text-white/40 font-light">
-            © 2024 Maya Interiors. All rights reserved.
+            © 2024 מאיה עיצוב פנים. כל הזכויות שמורות.
           </p>
           <div className="flex gap-6">
             <a href="#" className="text-sm text-white/40 font-light hover:text-white/60 transition-colors">
-              Instagram
+              אינסטגרם
             </a>
             <a href="#" className="text-sm text-white/40 font-light hover:text-white/60 transition-colors">
-              Pinterest
+              פינטרסט
             </a>
             <a href="#" className="text-sm text-white/40 font-light hover:text-white/60 transition-colors">
-              LinkedIn
+              לינקדאין
             </a>
           </div>
         </div>

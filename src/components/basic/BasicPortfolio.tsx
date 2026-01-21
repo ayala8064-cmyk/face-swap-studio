@@ -13,24 +13,24 @@ import sinaya8 from "@/assets/collection/sinaya-8.jpg";
 gsap.registerPlugin(ScrollTrigger);
 
 const portfolioItems = [
-  { id: 1, name: "Living Room", category: "Residential", image: sinaya1 },
-  { id: 2, name: "Master Suite", category: "Residential", image: sinaya2 },
-  { id: 3, name: "Dining Space", category: "Commercial", image: sinaya3 },
-  { id: 4, name: "Modern Kitchen", category: "Residential", image: sinaya4 },
-  { id: 5, name: "Bathroom", category: "Residential", image: sinaya5 },
-  { id: 6, name: "Home Office", category: "Commercial", image: sinaya6 },
-  { id: 7, name: "Reading Nook", category: "Residential", image: sinaya7 },
-  { id: 8, name: "Grand Entry", category: "Commercial", image: sinaya8 },
+  { id: 1, name: "סלון", category: "מגורים", image: sinaya1 },
+  { id: 2, name: "חדר שינה ראשי", category: "מגורים", image: sinaya2 },
+  { id: 3, name: "פינת אוכל", category: "מסחרי", image: sinaya3 },
+  { id: 4, name: "מטבח מודרני", category: "מגורים", image: sinaya4 },
+  { id: 5, name: "חדר רחצה", category: "מגורים", image: sinaya5 },
+  { id: 6, name: "משרד ביתי", category: "מסחרי", image: sinaya6 },
+  { id: 7, name: "פינת קריאה", category: "מגורים", image: sinaya7 },
+  { id: 8, name: "כניסה מרשימה", category: "מסחרי", image: sinaya8 },
 ];
 
 const BasicPortfolio = () => {
   const sectionRef = useRef<HTMLElement>(null);
   const gridRef = useRef<HTMLDivElement>(null);
-  const [activeFilter, setActiveFilter] = useState("All");
+  const [activeFilter, setActiveFilter] = useState("הכל");
 
-  const filters = ["All", "Residential", "Commercial"];
+  const filters = ["הכל", "מגורים", "מסחרי"];
 
-  const filteredItems = activeFilter === "All" 
+  const filteredItems = activeFilter === "הכל" 
     ? portfolioItems 
     : portfolioItems.filter(item => item.category === activeFilter);
 
@@ -66,9 +66,9 @@ const BasicPortfolio = () => {
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-16">
           <div>
-            <p className="text-sm font-light text-[#999] tracking-widest mb-4">OUR WORK</p>
+            <p className="text-sm font-light text-[#999] tracking-widest mb-4">העבודות שלנו</p>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-[#1a1a1a]">
-              Portfolio
+              פורטפוליו
             </h2>
           </div>
 
@@ -124,9 +124,9 @@ const BasicPortfolio = () => {
             href="#"
             className="inline-flex items-center gap-3 text-sm font-light text-[#1a1a1a] tracking-wider group"
           >
-            <span className="underline underline-offset-4">View All Projects</span>
+            <span className="underline underline-offset-4">צפו בכל הפרויקטים</span>
             <svg
-              className="w-4 h-4 group-hover:translate-x-1 transition-transform"
+              className="w-4 h-4 group-hover:-translate-x-1 transition-transform rotate-180"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"

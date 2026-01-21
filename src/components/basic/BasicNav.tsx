@@ -4,11 +4,11 @@ const BasicNav = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Portfolio", href: "#portfolio" },
-    { name: "Services", href: "#services" },
-    { name: "Contact", href: "#contact" },
+    { name: "בית", href: "#home" },
+    { name: "אודות", href: "#about" },
+    { name: "פורטפוליו", href: "#portfolio" },
+    { name: "שירותים", href: "#services" },
+    { name: "צור קשר", href: "#contact" },
   ];
 
   return (
@@ -17,7 +17,7 @@ const BasicNav = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <a href="#home" className="text-2xl font-light tracking-[0.2em] text-[#1a1a1a]">
-            MAYA
+            מאיה
           </a>
 
           {/* Desktop Nav */}
@@ -38,7 +38,7 @@ const BasicNav = () => {
             href="#contact"
             className="hidden md:block px-6 py-3 bg-[#1a1a1a] text-white text-sm font-light tracking-wider hover:bg-[#333] transition-colors"
           >
-            Get in Touch
+            דברו איתנו
           </a>
 
           {/* Mobile Menu Button */}
@@ -71,7 +71,7 @@ const BasicNav = () => {
               href="#contact"
               className="block w-full text-center px-6 py-4 bg-[#1a1a1a] text-white text-sm font-light tracking-wider"
             >
-              Get in Touch
+              דברו איתנו
             </a>
           </div>
         </div>

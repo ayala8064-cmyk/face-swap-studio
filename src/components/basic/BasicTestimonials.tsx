@@ -4,27 +4,27 @@ import gsap from "gsap";
 const testimonials = [
   {
     id: 1,
-    title: "Beyond Expectations",
-    body: "From the initial consultation to the final reveal, the experience felt thoughtful and refined. Every detail was considered.",
-    author: "Rachel & David Cohen",
+    title: "מעבר לציפיות",
+    body: "מהייעוץ הראשוני ועד לחשיפה הסופית, החוויה הרגישה מתחשבת ומעודנת. כל פרט נלקח בחשבון.",
+    author: "רחל ודוד כהן",
   },
   {
     id: 2,
-    title: "Seamless Process",
-    body: "Everything was clear and easy from start to finish. Communication was excellent and the result was exactly what we envisioned.",
-    author: "The Levi Family",
+    title: "תהליך חלק",
+    body: "הכל היה ברור וקל מההתחלה ועד הסוף. התקשורת הייתה מעולה והתוצאה הייתה בדיוק מה שדמיינו.",
+    author: "משפחת לוי",
   },
   {
     id: 3,
-    title: "Beautiful Craftsmanship",
-    body: "The quality is outstanding. Every room feels premium, looks perfect, and the finishing touches are on another level.",
-    author: "Sarah & Michael Adler",
+    title: "אומנות יפהפייה",
+    body: "האיכות יוצאת דופן. כל חדר מרגיש פרימיום, נראה מושלם, והגימורים ברמה אחרת לגמרי.",
+    author: "שרה ומיכאל אדלר",
   },
   {
     id: 4,
-    title: "Highly Recommended",
-    body: "A calm, professional experience with stunning results. We would absolutely work together again.",
-    author: "Jonathan & Emma Stein",
+    title: "ממליצים בחום",
+    body: "חוויה רגועה ומקצועית עם תוצאות מדהימות. בהחלט נעבוד יחד שוב.",
+    author: "יונתן ואמה שטיין",
   },
 ];
 
@@ -58,28 +58,28 @@ const BasicTestimonials = () => {
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-20">
           <div>
-            <p className="text-sm font-light text-[#999] tracking-widest mb-4">TESTIMONIALS</p>
+            <p className="text-sm font-light text-[#999] tracking-widest mb-4">המלצות</p>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-[#1a1a1a]">
-              Client Reviews
+              מה הלקוחות אומרים
             </h2>
           </div>
 
           {/* Navigation */}
           <div className="flex gap-4 mt-8 md:mt-0">
             <button
-              onClick={handlePrev}
-              className="w-12 h-12 border border-[#ddd] flex items-center justify-center hover:bg-[#1a1a1a] hover:border-[#1a1a1a] hover:text-white transition-colors"
-            >
-              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 19l-7-7 7-7" />
-              </svg>
-            </button>
-            <button
               onClick={handleNext}
               className="w-12 h-12 border border-[#ddd] flex items-center justify-center hover:bg-[#1a1a1a] hover:border-[#1a1a1a] hover:text-white transition-colors"
             >
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+            <button
+              onClick={handlePrev}
+              className="w-12 h-12 border border-[#ddd] flex items-center justify-center hover:bg-[#1a1a1a] hover:border-[#1a1a1a] hover:text-white transition-colors"
+            >
+              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 19l-7-7 7-7" />
               </svg>
             </button>
           </div>
