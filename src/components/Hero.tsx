@@ -3,10 +3,8 @@ import miniPic from "@/assets/mini-pic.webp";
 import logo from "@/assets/logo.png";
 import { ChevronDown } from "lucide-react";
 import AnimatedText from "./AnimatedText";
-
 const Hero = () => {
-  return (
-    <section className="relative h-screen w-full overflow-hidden">
+  return <section className="relative h-screen w-full overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
         <img src={heroBackground} alt="Luxurious interior design" className="h-full w-full object-cover object-center" />
@@ -16,7 +14,7 @@ const Hero = () => {
       <nav className="relative z-10 flex items-center justify-between px-8 py-6 md:px-16 lg:px-20">
         {/* Logo */}
         <div className="flex-shrink-0">
-          <img src={logo} alt="Interior Design Studio" className="h-30" />
+          
         </div>
 
         {/* Right Navigation */}
@@ -53,8 +51,6 @@ const Hero = () => {
           </button>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
