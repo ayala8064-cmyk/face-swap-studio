@@ -9,7 +9,7 @@ import BasicNav from "@/components/basic/BasicNav";
 
 const Basic = () => {
   return (
-    <main dir="rtl" className="min-h-screen bg-[#FAFAFA] font-sans">
+    <main dir="rtl" className="min-h-screen bg-[#FAFAFA]" style={{ fontFamily: "'Noto Sans Hebrew', sans-serif" }}>
       <BasicNav />
       <BasicHero />
       <BasicFeatures />
