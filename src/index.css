@@ -84,8 +84,8 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: "Noto Sans Hebrew", sans-serif;
-    font-weight: 400;
+    font-family: "athena", Georgia, "Times New Roman", serif;
+    font-weight: 300;
   }
 
   h1,
@@ -94,28 +94,28 @@
   h4,
   h5,
   h6 {
-    font-family: "Noto Sans Hebrew", sans-serif;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "athena", Georgia, "Times New Roman", serif;
+    font-weight: 300;
+    letter-spacing: 0.02em;
   }
 
   button,
   input,
   select,
   textarea {
-    font-family: "Noto Sans Hebrew", sans-serif;
-    font-weight: 400;
+    font-family: "athena", Georgia, "Times New Roman", serif;
+    font-weight: 300;
   }
 }
 
 @layer components {
   /* Hero headline styling */
   .hero-headline {
-    font-family: "Noto Sans Hebrew", sans-serif;
-    font-weight: 700;
+    font-family: "athena", Georgia, "Times New Roman", serif;
+    font-weight: 300;
     font-style: normal;
-    line-height: 1.2;
-    letter-spacing: 0;
+    line-height: 1;
+    letter-spacing: -0.02em;
   }
 
   /* Contact button outline style - ellipse shape */
